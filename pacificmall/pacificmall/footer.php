@@ -2,7 +2,7 @@
       <div class="footerContents">
         <div class="footerContents-contact">
           <div class="enterprise-logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-footer.svg" alt="PACIFIC MALL DEVELOPMENT" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-footer.svg" alt="<?php bloginfo( 'name' ); ?>" />
           </div>
           <div class="enterprise-detail">
             <p class="name">パシフィックモール開発株式会社</p>
@@ -44,7 +44,7 @@
         </div>
       </div>
       <p class="copyright">
-        <small class="copyright-text">&#169; 2019 PACIFIC MALL DEVELOPMENT CO.,LTD.</small>
+        <small class="copyright-text">&#169; 2019 <?php bloginfo( 'name' ); ?> CO.,LTD.</small>
       </p>
     </footer>
   </div><!-- /.container -->
