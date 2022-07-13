@@ -12,3 +12,12 @@ register_nav_menus(
         'place_footer' => 'フッターナビ',
     )
 );
+
+function get_main_title() {
+    if ( is_singular( 'post' ) ):
+        $category_obj = get_the_category();
+        return $category_obj[0]->name;
+    elseif ( is_page() ):
+        return get_the_title();
+    endif;
+}
