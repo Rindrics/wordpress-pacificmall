@@ -7,13 +7,8 @@
 <?php
 if ( have_posts() ):
   while ( have_posts() ) : the_post();
+    get_template_part( 'content-archive' );
 ?>
-                        <a class="news-link" href="<?php the_permalink(); ?> ?>">
-                          <div class="news-body">
-                            <time class="release"><?php the_date( 'Y.m.d' ); ?> ?></time>
-                            <p class="title"><?php the_title(); ?></p>
-                          </div>
-                        </a>
 <?php
   endwhile;
 endif;
