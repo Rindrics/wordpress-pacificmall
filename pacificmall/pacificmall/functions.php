@@ -36,3 +36,5 @@ function get_child_pages( $number = -1 ) {
     $child_pages = new WP_Query( $args );
     return $child_pages;
 }
+
+add_theme_support( 'post-thumbnails' );
