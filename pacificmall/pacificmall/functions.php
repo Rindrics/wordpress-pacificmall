@@ -38,3 +38,10 @@ function get_child_pages( $number = -1 ) {
 }
 
 add_theme_support( 'post-thumbnails' );
+
+add_image_size( 'top', 1077, 622, true );
+add_image_size( 'contribution', 557, 280, true );
+add_image_size( 'front-contribution', 255, 189, true );
+add_image_size( 'common', 465, 252, true );
+add_image_size( 'detail', 1100, 330, true );
+add_image_size( 'search', 168, 168, true );
