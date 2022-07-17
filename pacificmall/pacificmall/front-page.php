@@ -81,8 +81,8 @@ endif;
 ?>
         </div>
         <div class="section-buttons">
-          <button type="button" class="button button-ghost" onclick="javascript:location.href = '#';">
-            地域貢献活動を見る
+          <button type="button" class="button button-ghost" onclick="javascript:location.href = '<?php echo esc_url( home_url( 'contribution' ) ); ?>';">
+            <?php echo $contribution_title; ?>一覧を見る
           </button>
         </div>
       </div>
