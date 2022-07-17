@@ -36,8 +36,8 @@ endif;
 ?>
         </ul>
         <div class="section-buttons">
-          <button type="button" class="button button-ghost" onclick="javascript:location.href = '#';">
-            店舗情報一覧を見る
+          <button type="button" class="button button-ghost" onclick="javascript:location.href = '<?php echo esc_url(home_url( 'shop' ) ) ?>';">
+            <?php echo $shop_title; ?>一覧を見る
           </button>
         </div>
       </div>
