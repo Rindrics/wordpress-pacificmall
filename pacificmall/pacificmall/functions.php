@@ -57,6 +57,8 @@ function get_main_image() {
         return get_the_post_thumbnail( $post->ID, 'detail' );
     elseif ( is_category( 'news' ) || is_singular( 'post' ) ):
         return '<img src="'. get_template_directory_uri(). '/assets/images/bg-page-news.jpg" />';
+    elseif ( is_search() ):
+        return '<img src="' . get_template_directory_uri() . '/assets/images/bg-page-search.jpg" />';
     else:
         return '<img src="'. get_template_directory_uri(). '/assets/images/bg-page-dummy.png" />';
     endif;
