@@ -21,6 +21,8 @@ function get_main_title() {
         return get_the_title();
     elseif ( is_category() ):
         return single_cat_title();
+    elseif ( is_search() ):
+        return 'サイト内検索結果';
     endif;
 }
 
