@@ -23,6 +23,8 @@ function get_main_title() {
         return single_cat_title();
     elseif ( is_search() ):
         return 'サイト内検索結果';
+    elseif ( is_404() ):
+        return 'ページが見つかりません';
     endif;
 }
 
